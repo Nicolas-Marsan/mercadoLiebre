@@ -1,0 +1,94 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.encabezado{
+
+    background-color: #EAC926;
+    background-size: cover;
+    
+}
+.tituloHeader{
+    text-align: center;
+    font-size: 12px;
+}
+
+ul{
+
+    list-style-type: none;
+    display: inline;
+    font-size: 12px;
+
+}
+.fa-credit-card{
+    color: #1259c3;
+    font-size: 2em;
+    
+}
+.tarjeta{
+    text-align: center;
+}
+
+.burger-menu{
+
+    text-align: center;
+    font-size: 2em;
+    color:#1259c3;
+}
+
+.navega{
+    font-size: 12px;
+    padding-top: 15px;
+    
+    
+}
+.logo{
+    margin-left: 20px;
+    padding-top: 30px;
+}
+.basado{
+    font-size: 24px;
+    text-align: center;
+}
+.precios{
+    font-size: 18px;
+}
+.desc{
+    font-size: 16px;
+}
+
+.pieh1{
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+
+}
+.pieh2{
+    font-size: 12px;
+    text-align: center;
+    margin-top: -15px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.fa-user-shield{
+    color: #1259c3;
+    font-size: 2em;
+    
+}
+.fa-gift{
+    color: #1259c3;
+    font-size: 2em;
+    
+}
+.piepie{
+    font-size: 12px;
+    margin-top: 35px;
+}
+.seccionFooter{
+    margin-top: 70px;
+}
+main{
+    background-color: #ebebeb;
+}
