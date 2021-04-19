@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -6,6 +9,8 @@ body{
 
     background-color: #EAC926;
     background-size: cover;
+    width: 90vw;
+    margin:auto;
     
 }
 .tituloHeader{
@@ -48,13 +53,30 @@ ul{
 }
 .basado{
     font-size: 24px;
+    
+    color: #666;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     text-align: center;
 }
 .precios{
     font-size: 18px;
+    margin-bottom: 10px;
 }
 .desc{
     font-size: 16px;
+    color: #666;
+    display: none;
+    
+    
+}
+.descu{
+    font-size: 16px;
+    color:#39b54a;
+    margin-top: -14px;
+    
 }
 
 .pieh1{
@@ -91,4 +113,78 @@ ul{
 }
 main{
     background-color: #ebebeb;
+    width: 90vw;
+    margin: auto;
+    
+    margin-top: -22px;
+}
+.fa-truck{
+color:#39b54a;
+}
+
+.envio{
+
+    margin-top: 2px;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: white;
+    width: 292px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.banner{
+    width: 90vw;
+    height: 70px;
+    margin:auto;
+    background-image: url("../images/img-home-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.divBanner{
+
+    width: 90vw;
+}
+.menu{
+    display: none;
+}
+
+.foto{
+    width: 292px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+@media (min-width: 361px){
+	.desc{        
+        visibility: visible; 
+        
+              
+    }
+    .menu{
+        display: block;
+    }
+    .seccion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 769px){
+	.desc{        
+        display: block;    
+        
+
+    }
+    .menu{
+        display: block;
+    }
+    .seccion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }
