@@ -1,4 +1,5 @@
 *{
+    
     box-sizing: border-box;
 }
 body{
@@ -11,12 +12,15 @@ body{
     background-size: cover;
     width: 90vw;
     margin:auto;
+    height: 160px;
     
 }
 .tituloHeader{
     text-align: center;
     font-size: 12px;
+    
 }
+
 
 ul{
 
@@ -35,10 +39,18 @@ ul{
 }
 
 .burger-menu{
-
+    background-color:#1259c3;
     text-align: center;
-    font-size: 2em;
-    color:#1259c3;
+    font-size: 1.2em;
+    color:#ffffff;
+    border-radius: 5px;
+    max-width: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 5px;
+    
+    
 }
 
 .navega{
@@ -47,23 +59,26 @@ ul{
     
     
 }
-.logo{
-    margin-left: 20px;
-    padding-top: 30px;
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
 }
 .basado{
-    font-size: 24px;
+    
     
     color: #666;
     padding-top: 10px;
+    padding-left: 35px;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    text-align: center;
+    
 }
 .precios{
     font-size: 18px;
-    margin-bottom: 10px;
+    
 }
 .desc{
     font-size: 16px;
@@ -75,7 +90,8 @@ ul{
 .descu{
     font-size: 16px;
     color:#39b54a;
-    margin-top: -14px;
+    padding-left: 15px;
+    
     
 }
 
@@ -133,17 +149,20 @@ color:#39b54a;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 .banner{
     width: 90vw;
-    height: 70px;
-    margin:auto;
-    background-image: url("../images/img-home-banner.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    
+    margin:auto;    
+    
+}
+.banner img{
+    width: 100%;
 
 }
 .divBanner{
@@ -152,7 +171,63 @@ color:#39b54a;
 }
 .menu{
     display: none;
+    
 }
+.logo{
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+    
+    
+    
+    
+.logoml{
+    width: 50%;
+    
+    
+    
+}
+.logoml img{
+    width: 100%;
+    padding-left: 15px;
+    max-width: 200px;
+}
+.logo .navega input{
+    width: 90%;
+    border-radius: 5px;
+    border-color: transparent;
+    height: 30px;
+    color: #666;
+    font-weight: bold;
+    max-width: 380px;
+    
+    
+}
+.seccion{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/*.fa-search{
+    background-color: white;
+    height: 20px;
+    <i class="fas fa-search">
+
+
+}*/
+.navega{
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
 
 .foto{
     width: 292px;
@@ -161,30 +236,137 @@ color:#39b54a;
     margin-right: auto;
     display: block;
 }
-@media (min-width: 361px){
+
+
+
+main section .envio i{
+    display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+
+
+}
+
+
+@media (min-width: 480px){
 	.desc{        
         visibility: visible; 
         
               
     }
-    .menu{
-        display: block;
-    }
-    .seccion{
+    .seccion section{
+
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu li{
+
+        padding: 5px 0;
+        display: inline-block;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+    .logo{
+        
+        flex-wrap: nowrap;
+    }
+    .tituloHeader p{
+        width: 350px;
+    }
+    .logoml{
+        width: 33%;
+               
+    }
+    .navega{
+        width: 33%;
     }
 }
 
-@media (min-width: 769px){
+@media (min-width: 768px){
 	.desc{        
         display: block;    
         
 
     }
-    .menu{
-        display: block;
-    }
-    .seccion{
+    .seccion section{
+
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    .logoml{
+        width: 33%;
+               
+    }
+    .navega{
+        width: 33%;
+    }
+    .tituloHeader p{
+        width: 350px;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .menu li{
+
+        padding: 5px 0;
+        display: inline-block;
+    }
+    
+    .nav .menu li{
+        display: flex;
+        margin: 15px 15px;
+
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        
+
+    }
+    .burger-menu{
+        display: none;
+    }
+    .fa-id-card{
+        font-size: 1.1em;
+    }
+    .fa-sign-in-alt{
+        font-size: 1.1em;
+    }
+    .fa-shopping-basket{
+        font-size: 1.1em;
+    }
+    
+}
+
+@media (min-width: 1200px){
+
+.encabezado{
+
+    
+   
+    margin: auto;
+}
+
+
 }
