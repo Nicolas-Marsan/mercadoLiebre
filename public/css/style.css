@@ -64,6 +64,7 @@ ul{
     display: flex;
     justify-content: space-between;
     
+    
 }
 .basado{
     
@@ -80,13 +81,23 @@ ul{
     font-size: 18px;
     
 }
-.desc{
-    font-size: 16px;
-    color: #666;
+.desc{                      /****************************************************************/
+    font-size: 16px;        
+    color: #666;         
     display: none;
-    
-    
+    transition: all 1000ms;
+                                                /*MUY IMPORTANTE*/
 }
+.envio:hover .desc{
+        display: block; 
+        border-radius: 30%;  
+        
+}  
+
+/****************************************************************/
+
+
+
 .descu{
     font-size: 16px;
     color:#39b54a;
@@ -136,7 +147,14 @@ main{
 }
 .fa-truck{
 color:#39b54a;
+transition: transform .7s;
+
 }
+.fa-truck:hover{
+
+    transform: rotate(-90deg);
+}
+
 
 .envio{
 
@@ -169,10 +187,10 @@ color:#39b54a;
 
     width: 90vw;
 }
-.menu{
-    display: none;
+/*.menu{
+   /* display: none;    -------------------------------------------------------------------------*/
     
-}
+
 .logo{
     padding-top: 30px;
     padding-right: 10px;
@@ -255,6 +273,22 @@ top: -15px;
 
 }
 
+form {
+
+    margin-top: 30px;
+}
+
+.submit button:hover{
+
+    background-color: #0022AA;
+}
+.seccionFooter i:hover{
+
+    color: #39b54a;
+
+}
+
+
 
 @media (min-width: 480px){
 	.desc{        
@@ -299,11 +333,8 @@ top: -15px;
 }
 
 @media (min-width: 768px){
-	.desc{        
-        display: block;    
-        
-
-    }
+	
+    
     .seccion section{
 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -368,5 +399,18 @@ top: -15px;
     margin: auto;
 }
 
+footer {
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.contFooter1{
+    display: flex;
+    justify-content: space-around;
+    
+}
 
 }
