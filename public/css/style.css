@@ -1,9 +1,79 @@
 *{
-    
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+.interes{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.interes label{
+
+    margin-top: 15px;
+}
+
+.domicilio input,   .nacimiento input,   .email input, .nombreUsuario input, .nombre input, .contra input, .confirma input{
+
+    width: 350px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#EAC926;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+.submit button, .reset button{
+
+    width: 90px;
+    height: 40px;
+    background-color: #03264C;
+    color:#EAC926;
+    border-radius: 5px;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.contras{
+
+    text-align: center;
+}
+.perfil{
+
+    text-align: center;
+}
+
+.domicilio ,   .nacimiento ,   .email , .nombreUsuario , .nombre {
+
+    text-align: center;
+}
+
+.pdu, .in{
+
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #666;
+}
+.foto{
+    background-color: #666;
+    border-radius: 5px;
+}
+
+.foto input{
+
+    background-color: blanchedalmond;
+    border: black solid 1px;
 }
 
 .encabezado{
@@ -19,6 +89,14 @@ body{
     text-align: center;
     font-size: 12px;
     
+}
+.contra{
+    text-align: center;
+}
+
+.login{
+    padding-top: 100px;
+    height: 400px;
 }
 
 
